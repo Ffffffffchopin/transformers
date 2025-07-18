@@ -3540,7 +3540,7 @@ class GenerationMixin(ContinuousMixin):
         has_eos_stopping_criteria = any(hasattr(criteria, "eos_token_id") for criteria in stopping_criteria)
         do_sample = generation_config.do_sample
         do_sample = False
-        print("在TransformerForCausalLM中使用_sample方法",do_sample)
+        #print("在TransformerForCausalLM中使用_sample方法",do_sample)
         
         # init attention / hidden states / scores tuples
         scores =() if (return_dict_in_generate and output_scores) else None
